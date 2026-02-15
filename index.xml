@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Notebook</title>
+      <link>https://notebook.chamomile.icu</link>
+      <description>最近的10条笔记 on Notebook</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>FFmpeg</title>
+    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E5%A4%9A%E5%AA%92%E4%BD%93%E5%B7%A5%E5%85%B7/FFmpeg</link>
+    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E5%A4%9A%E5%AA%92%E4%BD%93%E5%B7%A5%E5%85%B7/FFmpeg</guid>
+    <description><![CDATA[ FFmpeg 基础知识 容器/文件 如flv, mp4等 （多）视频流 （多）音频流 （多）字幕 数据帧/数据包（Frame/Packet）： Frame对应压缩前的数据 Packet对应压缩后的数据 编解码器（Codec）： 以帧为单位实现原始数据与压缩数据之间的转换 复用（mux）： 把不同的流按照某种容器的规则放入容器 解复用（demux）： 把不同的流从某种容器中解析出来 帮助 ffmpeg 基本信息：ffmpeg -h 高级信息：ffmpeg -h long 所有信息：ffmpeg -h full ffplay help：ffplay -h ffprobe help：ffprobe ... ]]></description>
+    <pubDate>Sun, 15 Feb 2026 06:58:02 GMT</pubDate>
+  </item><item>
+    <title>Debian 手册</title>
+    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Debian-%E6%89%8B%E5%86%8C</link>
+    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Debian-%E6%89%8B%E5%86%8C</guid>
+    <description><![CDATA[ Debian 使用手册 安装必要软件 sudo apt update &amp;&amp; sudo apt upgrade -y sudo apt install -y zip unzip wget curl git libnss3-tools mkcert htop neofetch iproute2 tldr tree fish sudo apt install -y locales fonts-wqy-microhei fonts-wqy-zenhei sudo apt install -y build-essential gcc python3 nodejs npm sudo apt... ]]></description>
+    <pubDate>Sun, 15 Feb 2026 06:58:02 GMT</pubDate>
+  </item><item>
+    <title>Git</title>
+    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git</link>
+    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git</guid>
+    <description><![CDATA[ Git git 配置 # 配置全局邮箱 git config --global user.email &quot;&lt;你的邮箱&gt;&quot; # 配置全局姓名 git config --global user.name &quot;&lt;你的名字&gt;&quot; # 重置某项配置 git config --global --unset http.proxy # 设置仓库初始化时默认的分支名 git config --global init.defaultBranch main # 查看配置信息 git config --list git 项目初始化 cd PROJECT_ROO... ]]></description>
+    <pubDate>Sun, 15 Feb 2026 06:58:02 GMT</pubDate>
+  </item><item>
+    <title>Podman</title>
+    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Podman</link>
+    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Podman</guid>
+    <description><![CDATA[ Podman 系统管理 # 查看版本 podman version # 查看信息 podman info 镜像搜索与拉取 # 搜索镜像 podman search name # 过滤stars小于3000的镜像 podman search name --filter=stars=3000 # 拉取镜像 podman pull name:version 本地镜像管理 # 查看本地镜像 podman images podman images -a # 显示所有镜像 podman images -q # 只显示镜像 id # 删除镜像 podman image rm [name:version|id... ]]></description>
+    <pubDate>Sun, 15 Feb 2026 06:58:02 GMT</pubDate>
+  </item><item>
+    <title>Pytorch</title>
+    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Pytorch</link>
+    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Pytorch</guid>
+    <description><![CDATA[ Pytorch Dataset 提供一种方式获取 data 及其 label ###### 自定义数据集集 ###### from torch.utils.data import Dataset class MyData(Dataset): def __init__(self): def __getitem__(self, index): ###### 公共数据集 ###### import torchvision test_set = torchvision.datasets.CIFAR10( root=&#039;./dataset&#039;, # 测试集的保存位置 download=F... ]]></description>
+    <pubDate>Sun, 15 Feb 2026 06:58:02 GMT</pubDate>
+  </item><item>
+    <title>Qemu</title>
+    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/Qemu</link>
+    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/Qemu</guid>
+    <description><![CDATA[ Qemu 安装 qemu sudo apt install qemu-system qemu-user qemu-efi virt-manager 磁盘镜像管理 # 创建磁盘镜像 # -f: 指定磁盘镜像格式 qemu-img create -f qcow2 disk.qcow2 10G # 查看磁盘信息 qemu-img info disk.qcow2 # 磁盘镜像格式转换 # 将 qcow2 格式转化为 raw（还支持 vmdk、vdi 等） qemu-img convert -f qcow2 -O raw disk.qcow2 disk.raw # 调整磁盘大小 qemu-img res... ]]></description>
+    <pubDate>Sun, 15 Feb 2026 06:58:02 GMT</pubDate>
+  </item><item>
+    <title>RISC-V</title>
+    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/RISC-V</link>
+    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/RISC-V</guid>
+    <description><![CDATA[ RISC-V RISC-V ISA 命名格式 RV[###][abc...xyz] RV → RISC-V → =32|64|128, 用于标识处理器的字宽，也就是寄存器的宽度 例子 RV32IMA：支持 I、M、A 模块的 32 位 RISC-V ISA 设计原则：增量式和模块化 增量 ISA 计算机体系结构的传统方法 同一个体系架构下的新一代处理器不仅实现了新的ISA扩展，还必须实现过去的所有扩展，目的是为了保持向后的二进制兼容性 典型的，以80x86为代表 模块化 ISA 由 1 个强制要求实现的基本指令集 + 多个可选的扩展指令集组成 基础指令集是固定的，不会改变 如 RISC-V R... ]]></description>
+    <pubDate>Sun, 15 Feb 2026 06:58:02 GMT</pubDate>
+  </item><item>
+    <title>STM32</title>
+    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/STM32</link>
+    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/STM32</guid>
+    <description><![CDATA[ STM32 启动备注 启动模式 通过 BOOT[1:0] 引脚选择启动模式：系统复位后，SYSCLK 的第4个上升沿，BOOT 引脚的值将被锁存。用户可以通过设置 BOOT1 和 BOOT0 引脚的状态，来选择在复位后的启动模式 系统架构 内核 DCode 总线 通过外部 DCode 总线连接到总线矩阵然后与 Flash 接口连接，实现从 Flash 加载常量和调试访问 内核 ICode 总线 通过外部 ICode 总线连接 Flash，实现指令的读取 内核系统总线 Sbus 通过外部的 System 总线连接到总线矩阵 通用 DMA1、通用 DMA2 通过 DMA 总线，连接到总线矩阵 作用... ]]></description>
+    <pubDate>Sun, 15 Feb 2026 06:58:02 GMT</pubDate>
+  </item><item>
+    <title>CMake</title>
+    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%BC%96%E8%AF%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E9%93%BE/CMake</link>
+    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%BC%96%E8%AF%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E9%93%BE/CMake</guid>
+    <description><![CDATA[ CMake CMake 命令 # 1. 项目配置 # -S: 指定项目源代码根目录为 . # -B: 指定构建目录为 ./build # -G: 告诉 CMake 使用 Ninja 作为构建系统 # -D: 定义 CMake 变量 cmake -S . ]]></description>
+    <pubDate>Sun, 15 Feb 2026 06:58:02 GMT</pubDate>
+  </item><item>
+    <title>Clang</title>
+    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%BC%96%E8%AF%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E9%93%BE/Clang</link>
+    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%BC%96%E8%AF%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E9%93%BE/Clang</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sun, 15 Feb 2026 06:58:02 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
