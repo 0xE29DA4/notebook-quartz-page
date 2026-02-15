@@ -28,6 +28,7 @@ jobs:
         run: |
           mkdir -p quartz/content
           cp -r notebook/* quartz/content/
+          cp quartz/CNAME quartz/public/CNAME || true
  
       - name: Setup Node.js
         uses: actions/setup-node@v4
