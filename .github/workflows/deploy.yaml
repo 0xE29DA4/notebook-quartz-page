@@ -1,52 +1,53 @@
 name: Deploy Notebook Quartz Page
-
+ 
 on:
   push:
     branches:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: write
+ 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Quartz Site
+      - name: Checkout Quartz Repository
         uses: actions/checkout@v4
         with:
-          path: quartz-site
-
+          path: quartz
+ 
       - name: Checkout Notebook Repository
         uses: actions/checkout@v4
         with:
           repository: 0xE29DA4/notebook
-          path: notebook-content
+          path: notebook
 
       - name: Copy Notebook Content to Quartz Content Directory
         run: |
-          mkdir -p quartz-site/content
-          cp -r notebook-content/* quartz-site/content/
-
+          mkdir -p quartz/content
+          cp -r notebook/* quartz/content/
+ 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: latest
-
+          node-version: 22
+ 
       - name: Install Quartz Dependencies
         run: |
-          cd quartz-site
+          cd quartz
           npm install
-
+ 
       - name: Build Quartz Site
         run: |
-          cd quartz-site
+          cd quartz
           npx quartz build
-
+ 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./quartz-site/output
-          # 对于用户页面 (username.github.io)，设置 publish_branch 为 main
-          # 对于项目页面 (username.github.io/repo)，设置 publish_branch 为 gh-pages
-          publish_branch: gh-pages # 假设这是一个项目页面
+          publish_dir: ./quartz/public
+          publish_branch: gh-pages
+
