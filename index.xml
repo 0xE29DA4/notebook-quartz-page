@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on Notebook</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>RISC-V</title>
-    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/RISC-V</link>
-    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/RISC-V</guid>
-    <description><![CDATA[ RISC-V RISC-V ISA 命名格式 RV[###][abc...xyz] RV → RISC-V → =32|64|128, 用于标识处理器的字宽，也就是寄存器的宽度 例子 RV32IMA：支持 I、M、A 模块的 32 位 RISC-V ISA 设计原则：增量式和模块化 增量 ISA 计算机体系结构的传统方法 同一个体系架构下的新一代处理器不仅实现了新的ISA扩展，还必须实现过去的所有扩展，目的是为了保持向后的二进制兼容性 典型的，以80x86为代表 模块化 ISA 由 1 个强制要求实现的基本指令集 + 多个可选的扩展指令集组成 基础指令集是固定的，不会改变 如 RISC-V R... ]]></description>
-    <pubDate>Tue, 17 Feb 2026 13:50:31 GMT</pubDate>
+    <title>ffmpeg</title>
+    <link>https://notebook.chamomile.icu/tool_media/ffmpeg</link>
+    <guid>https://notebook.chamomile.icu/tool_media/ffmpeg</guid>
+    <description><![CDATA[ FFmpeg 基础知识 容器/文件 如flv, mp4等 （多）视频流 （多）音频流 （多）字幕 数据帧/数据包（Frame/Packet）： Frame对应压缩前的数据 Packet对应压缩后的数据 编解码器（Codec）： 以帧为单位实现原始数据与压缩数据之间的转换 复用（mux）： 把不同的流按照某种容器的规则放入容器 解复用（demux）： 把不同的流从某种容器中解析出来 帮助 ffmpeg 基本信息：ffmpeg -h 高级信息：ffmpeg -h long 所有信息：ffmpeg -h full ffplay help：ffplay -h ffprobe help：ffprobe ... ]]></description>
+    <pubDate>Fri, 27 Feb 2026 10:10:18 GMT</pubDate>
   </item><item>
-    <title>STM32</title>
-    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/STM32</link>
-    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/STM32</guid>
-    <description><![CDATA[ STM32 启动备注 启动模式 通过 BOOT[1:0] 引脚选择启动模式：系统复位后，SYSCLK 的第4个上升沿，BOOT 引脚的值将被锁存。用户可以通过设置 BOOT1 和 BOOT0 引脚的状态，来选择在复位后的启动模式 系统架构 内核 DCode 总线 通过外部 DCode 总线连接到总线矩阵然后与 Flash 接口连接，实现从 Flash 加载常量和调试访问 内核 ICode 总线 通过外部 ICode 总线连接 Flash，实现指令的读取 内核系统总线 Sbus 通过外部的 System 总线连接到总线矩阵 通用 DMA1、通用 DMA2 通过 DMA 总线，连接到总线矩阵 作用... ]]></description>
-    <pubDate>Tue, 17 Feb 2026 13:50:31 GMT</pubDate>
+    <title>clang</title>
+    <link>https://notebook.chamomile.icu/tool_toolchain/clang</link>
+    <guid>https://notebook.chamomile.icu/tool_toolchain/clang</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Fri, 27 Feb 2026 10:10:18 GMT</pubDate>
   </item><item>
-    <title>CMake</title>
-    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%BC%96%E8%AF%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E9%93%BE/CMake</link>
-    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%BC%96%E8%AF%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E9%93%BE/CMake</guid>
+    <title>cmake</title>
+    <link>https://notebook.chamomile.icu/tool_toolchain/cmake</link>
+    <guid>https://notebook.chamomile.icu/tool_toolchain/cmake</guid>
     <description><![CDATA[ CMake CMake 命令 # 1. 项目配置 # -S: 指定项目源代码根目录为 . # -B: 指定构建目录为 ./build # -G: 告诉 CMake 使用 Ninja 作为构建系统 # -D: 定义 CMake 变量 cmake -S . ]]></description>
-    <pubDate>Tue, 17 Feb 2026 13:50:31 GMT</pubDate>
+    <pubDate>Fri, 27 Feb 2026 10:10:18 GMT</pubDate>
   </item><item>
-    <title>Clang</title>
-    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%BC%96%E8%AF%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E9%93%BE/Clang</link>
-    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%BC%96%E8%AF%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E9%93%BE/Clang</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Tue, 17 Feb 2026 13:50:31 GMT</pubDate>
-  </item><item>
-    <title>GCC</title>
-    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%BC%96%E8%AF%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E9%93%BE/GCC</link>
-    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%BC%96%E8%AF%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E9%93%BE/GCC</guid>
+    <title>gcc</title>
+    <link>https://notebook.chamomile.icu/tool_toolchain/gcc</link>
+    <guid>https://notebook.chamomile.icu/tool_toolchain/gcc</guid>
     <description><![CDATA[ GCC 编译选项 编译选项说明E生成预处理文件（.i）S编译生成汇编文件（.s）c汇编生成目标文件（.o）I指定头文件目录g生成调试信息D(MACRO)定义宏 MACROD(MACRO=ABC)定义宏 MACRO，宏值为 ABCw不显示任何警告Wall显示所有警告O1默认 O0，最大 O3，O0 不进行优化std=c++11指定高级语言的版本ansi使用ANSI C标准 静态库 制作 gcc -c &lt;库源文件&gt; -o &lt;库目标文件&gt; ar src &lt;lib库名.a&gt; &lt;若干库目标文件&gt; 使用 gcc -c &lt;程序源文件&gt; -o &lt... ]]></description>
-    <pubDate>Tue, 17 Feb 2026 13:50:31 GMT</pubDate>
+    <pubDate>Fri, 27 Feb 2026 10:10:18 GMT</pubDate>
   </item><item>
-    <title>Makefile</title>
-    <link>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%BC%96%E8%AF%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E9%93%BE/Makefile</link>
-    <guid>https://notebook.chamomile.icu/%F0%9F%9B%A0%EF%B8%8F--%E7%BC%96%E8%AF%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E9%93%BE/Makefile</guid>
+    <title>makefile</title>
+    <link>https://notebook.chamomile.icu/tool_toolchain/makefile</link>
+    <guid>https://notebook.chamomile.icu/tool_toolchain/makefile</guid>
     <description><![CDATA[ Makefile 规则的三个组成部分 目标 依赖 命令 make 会根据时间戳决定是否生成目标，以提升效率 make 只执行第一条 rule，依赖找不到才向下执行 # makefile # rule1 target1: depend1, depend2, .. .. ]]></description>
-    <pubDate>Tue, 17 Feb 2026 13:50:31 GMT</pubDate>
+    <pubDate>Fri, 27 Feb 2026 10:10:18 GMT</pubDate>
   </item><item>
-    <title>index</title>
-    <link>https://notebook.chamomile.icu/%F0%9F%93%9A--%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link>
-    <guid>https://notebook.chamomile.icu/%F0%9F%93%9A--%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Tue, 17 Feb 2026 13:50:31 GMT</pubDate>
+    <title>patch</title>
+    <link>https://notebook.chamomile.icu/tool_cli/text_stream_processing_and_analysis/patch</link>
+    <guid>https://notebook.chamomile.icu/tool_cli/text_stream_processing_and_analysis/patch</guid>
+    <description><![CDATA[ patch 将补丁文件应用到原始文件。 更多信息：manned.org/patch 应用补丁： patch {{文件名}} &lt; {{补丁文件}} 撤销补丁： patch -R &lt; {{补丁文件}} 应用补丁到指定目录： patch -d {{目录}} &lt; {{补丁文件}} 创建备份后应用补丁： patch -b {{文件名}} &lt; {{补丁文件}} . ]]></description>
+    <pubDate>Fri, 27 Feb 2026 10:10:18 GMT</pubDate>
   </item><item>
-    <title>index.md</title>
-    <link>https://notebook.chamomile.icu/%F0%9F%93%9A--%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/index.md</link>
-    <guid>https://notebook.chamomile.icu/%F0%9F%93%9A--%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/index.md</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Tue, 17 Feb 2026 13:50:31 GMT</pubDate>
+    <title>sed</title>
+    <link>https://notebook.chamomile.icu/tool_cli/text_stream_processing_and_analysis/sed</link>
+    <guid>https://notebook.chamomile.icu/tool_cli/text_stream_processing_and_analysis/sed</guid>
+    <description><![CDATA[ sed 流式文本编辑器，常用于替换、删除、新增文件内容。 更多信息：manned.org/sed 替换文本中的字符串（输出到 stdout）： sed &#039;s/{{old}}/{{new}}/g&#039; {{文件}} 直接修改文件内容： sed -i &#039;s/{{old}}/{{new}}/g&#039; {{文件}} 删除指定行： sed &#039;{{3}}d&#039; {{文件}} 删除匹配的行： sed &#039;/{{模式}}/d&#039; {{文件}} 只打印匹配的行： sed -n &#039;/{{模式}}/p&#039; {{文件}} 替换第 N ... ]]></description>
+    <pubDate>Fri, 27 Feb 2026 10:10:18 GMT</pubDate>
   </item><item>
-    <title>index.md</title>
-    <link>https://notebook.chamomile.icu/%F0%9F%93%9A--%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/index.md</link>
-    <guid>https://notebook.chamomile.icu/%F0%9F%93%9A--%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/index.md</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Tue, 17 Feb 2026 13:50:31 GMT</pubDate>
+    <title>sort</title>
+    <link>https://notebook.chamomile.icu/tool_cli/text_stream_processing_and_analysis/sort</link>
+    <guid>https://notebook.chamomile.icu/tool_cli/text_stream_processing_and_analysis/sort</guid>
+    <description><![CDATA[ sort 对文本文件的行进行排序。 更多信息：manned.org/sort 按字典序排序： sort {{文件}} 按数值排序： sort -n {{文件}} 逆序排序： sort -r {{文件}} 去重排序： sort -u {{文件}} 按指定列排序（如第 2 列）： sort -k 2 {{文件}} 按数值逆序排序： sort -nr {{文件}} 按人类可读的数值排序（如 1K, 2M）： sort -h {{文件}} 排序并输出到文件： sort {{文件}} -o {{输出文件}} . ]]></description>
+    <pubDate>Fri, 27 Feb 2026 10:10:18 GMT</pubDate>
   </item><item>
-    <title>CSS</title>
-    <link>https://notebook.chamomile.icu/%F0%9F%93%9A--%E9%A2%86%E5%9F%9F%E7%89%B9%E5%AE%9A%E8%AF%AD%E8%A8%80/CSS</link>
-    <guid>https://notebook.chamomile.icu/%F0%9F%93%9A--%E9%A2%86%E5%9F%9F%E7%89%B9%E5%AE%9A%E8%AF%AD%E8%A8%80/CSS</guid>
-    <description><![CDATA[ CSS 属性继承性 子级默认继承父级的文字控制属性 子级只继承自身不存在的文字控制属性 属性层叠性 div {...} div {...} /* 相同的属性覆盖，即后面的属性覆盖前面的属性，不相同的属性的叠加 */ 选择器 /* 通配符选择器，一般用于清除网页的默认样式，例如默认的内外边距 */ * {} /* 后代选择器，选中某种元素的某种所有后代（子孙）*/ 父选择器 子选择器 {} /* 子代选择器，在一级子代中选中某种元素 */ 父选择器 &gt; 子选择器 {} /* 并集选择器，css 代码 同时对所有选择器生效 */ 选择器1, 选择器2, .. ]]></description>
-    <pubDate>Tue, 17 Feb 2026 13:50:31 GMT</pubDate>
+    <title>tr</title>
+    <link>https://notebook.chamomile.icu/tool_cli/text_stream_processing_and_analysis/tr</link>
+    <guid>https://notebook.chamomile.icu/tool_cli/text_stream_processing_and_analysis/tr</guid>
+    <description><![CDATA[ tr 转换或删除字符（只能从标准输入读取）。 更多信息：manned.org/tr 将小写转换为大写： echo &quot;{{hello}}&quot; | tr &#039;a-z&#039; &#039;A-Z&#039; 删除指定字符： echo &quot;{{hello123}}&quot; | tr -d &#039;0-9&#039; 压缩重复字符： echo &quot;{{hello world}}&quot; | tr -s &#039; &#039; 替换字符： echo &quot;{{hello}}&quot; | tr &#039;a-z&#039; &#039... ]]></description>
+    <pubDate>Fri, 27 Feb 2026 10:10:18 GMT</pubDate>
+  </item><item>
+    <title>uniq</title>
+    <link>https://notebook.chamomile.icu/tool_cli/text_stream_processing_and_analysis/uniq</link>
+    <guid>https://notebook.chamomile.icu/tool_cli/text_stream_processing_and_analysis/uniq</guid>
+    <description><![CDATA[ uniq 报告或省略重复的行（通常配合 sort 使用）。 更多信息：manned.org/uniq 去除相邻重复行： sort {{文件}} | uniq 统计每行出现的次数： sort {{文件}} | uniq -c 只显示重复的行： sort {{文件}} | uniq -d 只显示不重复的行： sort {{文件}} | uniq -u 忽略前 N 个字段： sort {{文件}} | uniq -f {{N}} 忽略大小写： sort {{文件}} | uniq -i . ]]></description>
+    <pubDate>Fri, 27 Feb 2026 10:10:18 GMT</pubDate>
   </item>
     </channel>
   </rss>
